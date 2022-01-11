@@ -1,35 +1,40 @@
-public class EphrataTemp {
+package sampleCode.Arrays;
 
+public class EphrataTemp {
     public static void main(String[] args) {
 
-        int[] hightemp = {26, 43, 28, 30};
+        int[] temp = {26, 43, 28, 30};
 
         int sum = 0;
         int count = 0;
+        int lowCount = 0;
+        int highCount = 0;
 
-        // Calculate Sum, Count, and Average Temperature
-
-        for (int t = 0; t < hightemp.length; t++) {        
-            sum += hightemp[t];
+        for (int t = 0; t < temp.length; t++) {        
+            sum += temp[t];
             count++;
-            //System.out.println(count);
         }
 
         double averageTemp = (double)sum / count;
 
         System.out.println("Average Daily Temperature: " + averageTemp);
 
-        // Count and print out the number of days the temperature was below the average temperature
+
+        for (int i = 0; i < temp.length; i++) { //for loop that achieves similar goal
+            if (temp[i] < averageTemp) {
+                lowCount++;
+            }
+        }
+
+        System.out.println("Days below the average temperature: " + lowCount);
 
 
+        for (int i : temp) {                    //for each loop
+            if (i > averageTemp) {
+                highCount++;
+            }
+        }
 
-
-        // Using a For-Each Loop Count and print out the number of days the temperature was above the average temperature
-
-
-        
-        
-
+        System.out.println("Days above the average temperature: " + highCount);
     }
-
 }

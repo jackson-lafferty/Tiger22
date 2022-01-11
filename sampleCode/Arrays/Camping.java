@@ -1,3 +1,4 @@
+package sampleCode.Arrays;
 import java.util.Arrays;
 
 public class Camping {
@@ -14,17 +15,14 @@ public class Camping {
       
       // babyGrowls array here and call countBabyGrowls Method
 
-
-
        
       // harlowNaps array here and call increaseNap Method as well as minHarlowNaps and maxHarlowNaps Methods
       
-
-
       
       // holdHudson array here and call sumHudsonHold Method
       
       System.out.println(Arrays.toString(dogNames));
+      
       // Println statements here
       /* Should output
       Baby growled 43 times!
@@ -32,49 +30,20 @@ public class Camping {
       Hudson was held 6 times!
       */
 
-      
-
 
     } //end of main method
     
     // countBabyGrowls static method here
     
 
-
-
-
-
-
-    
     // increaseNap static method here
     
 
-
-
-    
     // minHarlowNaps static method here     
-    
-
-
-
-
-
-
 
     
     // maxHarlowNaps static method here    
     
-
-
-
-    
     
     // sumHudsonHold static method here  
-    
-
-
-
-
-
-    
 }

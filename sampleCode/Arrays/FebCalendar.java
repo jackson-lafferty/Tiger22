@@ -1,4 +1,4 @@
-// Print a simple calendar for the month of Feb 2022 two different ways.
+package sampleCode.Arrays;
 
 public class FebCalendar {
     public static void main(String[] args) {
@@ -16,15 +16,14 @@ public class FebCalendar {
         System.out.println("\t\tFeb 2022");
 
         // Loop through all the weeks (for)
-        for (int w = 0; w < 4; w++) {
+        for (int i = 0; i < 4; i++) {
             // Loop through all the days (for)
             for (int d = 0; d < 7; d++) {
                 // Calculate the date based on the week and day number.
-                int date = (7 * w) + d + 1;
+                int date = (7 * i) + d + 1;
                 String day = days[d];
                 System.out.print(day + " " + date + "\t");
             }
-
             // Finish the week, move to the next line.
             System.out.println();
         }
@@ -38,14 +37,13 @@ public class FebCalendar {
         System.out.println("\t\tFeb 2022");
 
         // Loop through all the weeks (for)
-        for (int w = 0; w < 4; w++) {
+        for (int i = 0; i < 4; i++) {
             // Loop through all the days (for-each)
             for (String day : days) {
                 // Calculate the date with a simple running count.
                 date++;
                 System.out.print(day + " " + date + "\t");
             }
-
             // Finish the week, move to the next line.
             System.out.println();
         }
