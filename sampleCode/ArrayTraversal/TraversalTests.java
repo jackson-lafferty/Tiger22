@@ -71,6 +71,10 @@ public class TraversalTests {
        */
        
       // Your code goes below this line (suggested length: ~5 lines)
+      int[] reversed = new int[arr.length];
+      for (int i = 0; i < arr.length; i++){
+         reversed[arr.length - i - 1] = arr[i];
+      }
       return arr;
    }
    
