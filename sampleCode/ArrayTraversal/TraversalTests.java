@@ -1,3 +1,4 @@
+package sampleCode.ArrayTraversal;
 
 public class TraversalTests {
    public static void main(String[] args) {
@@ -24,46 +25,35 @@ public class TraversalTests {
    }
    
    public static void printArray(int[] arr) {
-      /*
-       * This method should print the contents of an array on a single line. 
-       * It should work for arrays with no elements, one element, or more than one element.
-       *
-       * Here are some formatting examples:
-       *    - if the array has no elements, it should print "[]"
-       *    - if the array had a single element 1, it should print "[1]"
-       *    - if the array had three elements 1, 23, and 456, it should print "[1, 23, 456]"
-       */
-       
-      // Your code goes below this line (suggested length: ~10 lines)
-      System.out.println(arr);      
+      if (arr.length == 0) {
+         System.out.println("[]");
+      } else {
+         System.out.print("[" + arr[0]);
+         for (int i = 1; i < arr.length; i++) {
+            System.out.print(", " + arr[i]);
+         } 
+         System.out.println("]");     
+      }
    }
    
    public static boolean areArraysEqual(int[] arr1, int[] arr2) {
-      /*
-       * This method should return true if the two 
-       * input arrays, arr1 and arr2, are equal.
-       * First, think about what it means for two arrays to be equal.
-       * There are two requirements:
-       *    1) 
-       *    2) 
-       * Then, think about which is easier to verify:
-       *    - two arrays are equal
-       *    - two arrays are *not* equal
-       */
-       
-      // Your code goes below this line (suggested length: ~10 lines)
-      return false;
-      
+      if (arr1.length != arr2.length) {
+         return false;
+      }
+      for (int i = 0; i < arr1.length; i++) {
+         if (arr1[i] != arr2[i]) {
+            return false;
+         }
+      }
+      return true;
    }
    
    public static int[] findAndReplace(int[] arr, int findValue, int replaceValue) {
-      /*
-       * This method loops over the input array and overwrites 
-       * every occurrence of the findValue with the replaceValue.
-       * The array that is returned should have no more occurrences of the findValue in it.
-       */
-       
-      // Your code goes below this line (suggested length: ~6 lines)
+      for (int i = 0; i < arr.length; i++) {
+         if (arr[i] == findValue) {
+            arr[i] = replaceValue;
+         }
+      }
       return arr;
    }
    
@@ -85,15 +75,7 @@ public class TraversalTests {
    }
    
    /*************************************************************************/
-   /*                                                                       */
-   /*                                                                       */
-   /*                                                                       */
-   /*                                                                       */
    /*                 DON'T CHANGE ANYTHING BELOW THIS BOX                  */
-   /*                                                                       */
-   /*                                                                       */
-   /*                                                                       */
-   /*                                                                       */
    /*************************************************************************/
    
    public static void runPart1() {
