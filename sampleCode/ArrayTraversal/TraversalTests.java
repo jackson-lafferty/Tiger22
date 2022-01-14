@@ -8,19 +8,19 @@ public class TraversalTests {
       boolean part4 = false;
       
       if (part1) {
-         runPart1(); // put your code in the printArray() method
+         runPart1();
       }
 
       if (part2) {
-         runPart2(); // put your code in the areArraysEqual() method
+         runPart2();
       }
       
       if (part3) {
-         runPart3(); // put your code in the searchAndReplace() method
+         runPart3();
       }
       
       if (part4) {
-         runPart4(); // put your code in the reverseArray() method
+         runPart4();
       }
    }
    
@@ -58,19 +58,6 @@ public class TraversalTests {
    }
    
    public static int[] reverseArray(int[] arr) {
-      /*
-       * This method should reverse the order of elements in the arr.
-       * Note that there are two ways you could do this:
-       *    1) Create a new array that you can copy the reversed elements into.
-       *    2) Swap pairs of elements in the original array without creating a new array.
-       *       That is, swap the first element with the last element,
-       *       the second element with the second-to-last element, etc.
-       * I would suggest first implementing 1), and then working on 2) if you have more time.
-       *
-       * Question to think about: why might 2) be a better solution that 1)?  
-       */
-       
-      // Your code goes below this line (suggested length: ~5 lines)
       int[] reversed = new int[arr.length];
       for (int i = 0; i < arr.length; i++){
          reversed[arr.length - i - 1] = arr[i];
