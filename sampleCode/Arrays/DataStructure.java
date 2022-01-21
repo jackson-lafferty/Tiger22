@@ -45,10 +45,12 @@ public class DataStructure {
 
         
         int count = 0;
+        int useless = 0;
 
         //Access with for each loop
-        for(int num: numbers){    
-          count = count + 1;
+        for(int num: numbers){
+            numbers[num] = useless;
+            count = count + 1;
         }
 
         System.out.println("Count with for each: " + count); 
