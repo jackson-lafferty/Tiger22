@@ -1,4 +1,4 @@
-package sampleCode.Arrays;
+package studentWork.jackson_lafferty;
 import java.util.Arrays;
 
 public class DataStructure {
@@ -8,7 +8,7 @@ public class DataStructure {
 
         int[] numbers = new int[5];
 
-        System.out.println("numbers arrary is: " + Arrays.toString(numbers));
+        System.out.println("numbers array is: " + Arrays.toString(numbers));
 
         int[] numbers2 = {1,2,3,4,5};
 
@@ -38,7 +38,7 @@ public class DataStructure {
             numbers[i] = (i+1)*2;
         }
 
-        System.out.println("numbers arrary is now: " + Arrays.toString(numbers));
+        System.out.println("numbers array is now: " + Arrays.toString(numbers));
 
 
         // Access an array
