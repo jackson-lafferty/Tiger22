@@ -4,7 +4,7 @@ import java.util.Arrays;
 public class MetroCardRides {
     public static void main(String[] args) {
 
-    int [] rides = {5, 4, 3, 2, 1};
+    int [] rides = {1, 2, 3, 4, 5};
     System.out.println(Arrays.toString(rides));
     
     firstToLast(rides);
