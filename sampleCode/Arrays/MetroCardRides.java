@@ -1,4 +1,5 @@
 package sampleCode.Arrays;
+
 import java.util.Arrays;
 
 public class MetroCardRides {
