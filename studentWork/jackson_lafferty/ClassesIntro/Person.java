@@ -1,12 +1,12 @@
-// package studentWork.ClassesIntro; 
+package studentWork.jackson_lafferty.ClassesIntro;
+
 
 public class Person {
 
    String name;
    int age;
    String[] pets;
-   // TODO (step 3): add another field to the Person class here.
-   
+   String car;
    
    public void printIntroduction() {
       System.out.println("Hi, my name is " + name + ".");
@@ -24,7 +24,17 @@ public class Person {
    public void printPetCount() {
       System.out.println("I have " + pets.length + " pets.");
    }
-   
-   // TODO (step 4): add another method which prints something related to the field you added in step 1
+
+   public void printPets() {
+      System.out.println("My pet's names are: ");
+
+      for (int i = 0; i < pets.length; i++) {
+         System.out.println(pets[i]);
+      }
+   }
+
+   public void printCar() {
+      System.out.println("I drive a " + car);
+   }
    
 }
