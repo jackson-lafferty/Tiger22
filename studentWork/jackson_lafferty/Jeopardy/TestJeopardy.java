@@ -1,4 +1,4 @@
-package sampleCode.Jeopardy;
+package studentWork.jackson_lafferty.Jeopardy;
 
 import java.util.*;
 
