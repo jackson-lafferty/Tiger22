@@ -38,8 +38,9 @@ public class Point {
 
     // Return the distance from this point to p.
     public double distanceFrom(Point p) {
-        // TODO: Fill this out.
-        return 0;
+        double dx = Math.pow(getX() - p.getX(), 2);
+        double dy = Math.pow(getY() - p.getY(), 2))
+        return Math.sqrt(dx + dy);
     }
 
 
@@ -52,11 +53,13 @@ public class Point {
     public static void main(String[] args) {
         Point p = new Point(1,2);
 
+        p.translate(2, 4);
+
         System.out.println("x: " + p.getX());
         System.out.println("y: " + p.getY());
 
-        Point other = new Point(4,6);
-        System.out.println(p.distanceFrom(other));
+        //Point other = new Point(4,6);
+        //System.out.println(p.distanceFrom(other));
     }
 
 }

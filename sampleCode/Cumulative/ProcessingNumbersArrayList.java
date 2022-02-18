@@ -1,7 +1,5 @@
 package sampleCode.Cumulative;
-import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.*;
 
 
 public class ProcessingNumbersArrayList {
