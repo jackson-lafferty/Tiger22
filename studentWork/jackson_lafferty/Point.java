@@ -39,7 +39,7 @@ public class Point {
     // Return the distance from this point to p.
     public double distanceFrom(Point p) {
         double dx = Math.pow(getX() - p.getX(), 2);
-        double dy = Math.pow(getY() - p.getY(), 2))
+        double dy = Math.pow(getY() - p.getY(), 2);
         return Math.sqrt(dx + dy);
     }
 

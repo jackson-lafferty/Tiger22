@@ -1,13 +1,9 @@
 package sampleCode.Constructor.MarioKart;
 
 public class MarioKartGame {
-    // Which race track will be used?
     private String track;
-    // How many laps?
     private int numberOfLaps;
-    // Easy, Medium, or Hard
     private String computerDifficulty;
-    // Which characters will race in this game?
     private String[] characters;
 
     public MarioKartGame() {

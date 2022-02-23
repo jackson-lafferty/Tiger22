@@ -14,8 +14,8 @@ public class Account {
 
     public Account(int accountNum, String accountName){
 
-        accountNum = accountNum;
-        accountName = accountName;
+        this.accountNum = accountNum;
+        this.accountName = accountName;
 
     }
 

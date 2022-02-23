@@ -21,6 +21,8 @@ public class ProcessingNumbersArrayList {
         //minMax(addNumbers);
         //sumEven(totalNumbers, addNumbers);
         //largestOdd(totalNumbers, addNumbers);
+
+        scanner.close();
     }
 
     // Write with sumall Method
@@ -38,6 +40,8 @@ public class ProcessingNumbersArrayList {
         System.out.println ();
         System.out.println ("Your numbers add to " + sum); 
         System.out.println("Items in ArrayList = " + nums);
+
+        scannerSum.close();
     }
 
     //Write minMax Method
