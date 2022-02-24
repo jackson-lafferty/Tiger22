@@ -1,16 +1,14 @@
 package studentWork.jackson_lafferty.ElevensLab.Activity1;
-// package sampleCode.ElevensLab.Activity1;
-
-/**
- * This is a class that tests the Card class.
- */
 public class CardTester {
 
-	/**
-	 * The main method in this class checks the Card operations for consistency.
-	 *	@param args is not used.
-	 */
 	public static void main(String[] args) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+		Card aceSpades = new Card("Ace", "Spades", 1);
+		System.out.println(aceSpades.toString());
+
+		Card twoSpades = new Card("Two", "Spades", 2);
+		System.out.println(twoSpades.toString());
+
+		Card threeSpades = new Card("Three", "Spades", 3);
+		System.out.println(threeSpades.toString());
 	}
 }

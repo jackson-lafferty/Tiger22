@@ -1,5 +1,4 @@
 package sampleCode.ArrayTraversal;
-
 public class TraversalTests {
    public static void main(String[] args) {
       boolean part1 = false;
@@ -10,7 +9,6 @@ public class TraversalTests {
       if (part1) {
          runPart1();
       }
-
       if (part2) {
          runPart2();
       }
@@ -35,7 +33,7 @@ public class TraversalTests {
          System.out.println("]");     
       }
    }
-   
+
    public static boolean areArraysEqual(int[] arr1, int[] arr2) {
       if (arr1.length != arr2.length) {
          return false;
@@ -47,7 +45,7 @@ public class TraversalTests {
       }
       return true;
    }
-   
+
    public static int[] findAndReplace(int[] arr, int findValue, int replaceValue) {
       for (int i = 0; i < arr.length; i++) {
          if (arr[i] == findValue) {
@@ -64,7 +62,7 @@ public class TraversalTests {
       }
       return arr;
    }
-   
+
    /*************************************************************************/
    /*                 DON'T CHANGE ANYTHING BELOW THIS BOX                  */
    /*************************************************************************/

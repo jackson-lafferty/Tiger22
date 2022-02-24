@@ -51,6 +51,7 @@ public class Point {
     // Mutators - conventions; set, void
 
     public static void main(String[] args) {
+        // We are constructing an instance of the class.
         Point p = new Point(1,2);
 
         p.translate(2, 4);

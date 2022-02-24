@@ -55,6 +55,8 @@ public class Wordle {
          } else {
             return guess;
          }
+
+         console.close();
       }
    }
    
