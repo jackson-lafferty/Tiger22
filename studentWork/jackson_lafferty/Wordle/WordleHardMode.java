@@ -9,7 +9,6 @@ public class WordleHardMode {
    }
    
    public static void playWordleHardGame() {
-      // Plays a game of wordle (see https://www.powerlanguage.co.uk/wordle/)
       
       System.out.println("There are " + WordLists.TARGETS.size() + " possible targets");
       

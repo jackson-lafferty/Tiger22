@@ -2,7 +2,6 @@ package studentWork.jackson_lafferty.ElevensLab.Activity2;
 
 public class DeckTester {
 
-
 	public static void main(String[] args) {
 		String[] rank1 = {"Jack", "Queen", "King"};
 		String[] suit1 = {"Hearts", "Spades", "Diamonds"};

@@ -10,9 +10,13 @@ public class Deck {
 
 	public Deck(String[] ranks, String[] suits, int[] values) {
 		this.cards = new ArrayList<Card>();
-		for (int i = 0; i < ranks.length; i ++) {
-			Card newCard = new Card(ranks[i], suits[i], values[i]);
-			this.cards.add(newCard);
+		for (int i = 0; i < ranks.length; i++) {
+			for (int j = 0; i > suits.length; j++) {
+				for (int k = 0; k > values.length; k++) {
+					Card newCard = new Card(ranks[i], suits[j], values[k]);
+					this.cards.add(newCard);
+				}
+			}
 		}
 
 		this.size = cards.size();

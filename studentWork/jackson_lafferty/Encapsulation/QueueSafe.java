@@ -1,13 +1,11 @@
-package sampleCode.Encapsulation;
+package studentWork.jackson_lafferty.Encapsulation;
 
 import java.util.ArrayList;
 
-// TODO: Talk about invariants.
-// TODO: Talk about changing imp`
-public class Queue {
-    ArrayList<Integer> list;
+public class QueueSafe {
+    private ArrayList<Integer> list;
 
-    public Queue() {
+    public QueueSafe() {
         list = new ArrayList<Integer>();
     }
 
@@ -21,6 +19,7 @@ public class Queue {
     // TODO: Implement this method
     // Adds the element to the queue.
     public void enqueue(int element) {
+        
     }
 
     public String toString() {
