@@ -7,7 +7,7 @@ public class DeckTester {
 		String[] suit1 = {"Hearts", "Spades", "Diamonds"};
 		int[] value1 = {11, 12, 13};
 	    Deck deck1 = new Deck(rank1, suit1, value1);
-	    System.out.println("Deck1 size should be 3: " + deck1.size());
+	    System.out.println("Deck1 size should be 9: " + deck1.size());
 	    
 	    String[] rank2 = {"10", "Queen", "King"};
 	    String[] suit2 = {"Clubs", "Spades", "Diamonds"};
