@@ -31,4 +31,12 @@ public class MarioKartGame {
     public String getTrack() {
         return this.track;
     }
+
+    public int getLaps() {
+        return this.numberOfLaps;
+    }
+
+    public String getDifficulty() {
+        return this.computerDifficulty;
+    }
 }

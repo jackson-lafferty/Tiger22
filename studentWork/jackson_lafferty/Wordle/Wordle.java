@@ -80,7 +80,7 @@ public class Wordle {
          } else if (target.indexOf(guess.charAt(i)) != -1 && target.indexOf(guess.charAt(i)) != targetIndex) {
             System.out.println(guess.charAt(i) + ": yellow");
          } else {
-            System.out.println(guess.charAt(i) + ": red");
+            System.out.println(guess.charAt(i) + ": gray");
          }
       }
    }
