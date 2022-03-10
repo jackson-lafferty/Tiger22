@@ -3,10 +3,10 @@ import studentWork.jackson_lafferty.ElevensLab.Activity2.Deck;
 
 public class DeckTester {
 	public static void main(String[] args) {
-		String[] suits2 = {"Spades", "Clubs", "Hearts", "Diamonds"};
-		String[] ranks2 = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
-		int[] pointValues2 = {1, 2, 3, 4 , 5, 6, 7, 8, 9, 10, 11, 12, 13};
-		Deck c = new Deck(ranks2, suits2, pointValues2);
+		String[] suits = {"Spades", "Clubs", "Hearts", "Diamonds"};
+		String[] ranks = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
+		int[] pointValues = {1, 2, 3, 4 , 5, 6, 7, 8, 9, 10, 11, 12, 13};
+		Deck c = new Deck(ranks, suits, pointValues);
 
 		System.out.println("**** Original Deck Methods ****");
 		System.out.println("  toString:\n" + c.toString());
