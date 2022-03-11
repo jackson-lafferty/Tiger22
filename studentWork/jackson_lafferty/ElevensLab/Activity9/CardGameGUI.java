@@ -1,3 +1,7 @@
+package studentWork.jackson_lafferty.ElevensLab.Activity9;
+import studentWork.jackson_lafferty.ElevensLab.Activity1.Card;
+import studentWork.jackson_lafferty.ElevensLab.Activity7.ElevensBoard;
+
 import java.awt.Point;
 import java.awt.Graphics;
 import java.awt.Dimension;
@@ -55,7 +59,7 @@ public class CardGameGUI extends JFrame implements ActionListener {
 	private static final int LABEL_HEIGHT_INC = 35;
 
 	/** The board (Board subclass). */
-	private Board board;
+	private ElevensBoard board;
 
 	/** The main panel containing the game components. */
 	private JPanel panel;
@@ -88,7 +92,7 @@ public class CardGameGUI extends JFrame implements ActionListener {
 	 * Initialize the GUI.
 	 * @param gameBoard is a <code>Board</code> subclass.
 	 */
-	public CardGameGUI(Board gameBoard) {
+	public CardGameGUI(ElevensBoard gameBoard) {
 		board = gameBoard;
 		totalWins = 0;
 		totalGames = 0;
@@ -285,7 +289,7 @@ public class CardGameGUI extends JFrame implements ActionListener {
 			List<Integer> selection = new ArrayList<Integer>();
 			for (int k = 0; k < board.size(); k++) {
 				if (selections[k]) {
-					selection.add(new Integer(k));
+					selection.add(Integer.valueOf(k));
 				}
 			}
 			// Make sure that the selected cards represent a legal replacement.

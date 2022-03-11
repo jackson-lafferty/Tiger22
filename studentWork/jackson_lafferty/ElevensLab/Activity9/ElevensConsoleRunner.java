@@ -1,5 +1,6 @@
-import java.util.Scanner;
-import java.util.ArrayList;
+package studentWork.jackson_lafferty.ElevensLab.Activity9;
+import studentWork.jackson_lafferty.ElevensLab.Activity7.ElevensBoard;
+import java.util.*;
 
 class ElevensConsoleRunner {
    public static void main(String[] args) {
