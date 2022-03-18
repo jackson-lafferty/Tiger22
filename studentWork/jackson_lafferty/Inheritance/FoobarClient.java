@@ -1,4 +1,4 @@
-package sampleCode.Inheritance;
+package studentWork.jackson_lafferty.Inheritance;
 
 public class FoobarClient {
     public static void main(String[] args) {

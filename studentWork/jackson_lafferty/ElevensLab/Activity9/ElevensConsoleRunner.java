@@ -12,7 +12,7 @@ class ElevensConsoleRunner {
       
       Scanner scan = new Scanner(System.in);
       
-      while(board.anotherPlayIsPossible() && !board.gameIsWon()) {
+      while (board.anotherPlayIsPossible() && !board.gameIsWon()) {
          step(scan, board);
       }
       

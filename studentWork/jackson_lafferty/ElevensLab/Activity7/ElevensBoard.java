@@ -4,7 +4,7 @@ import studentWork.jackson_lafferty.ElevensLab.Activity2.Deck;
 import java.util.*;
 
 public class ElevensBoard {
-
+	
 	private static final int BOARD_SIZE = 9;
 
 	private static final String[] RANKS = {"ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "jack", "queen", "king"};
@@ -18,7 +18,6 @@ public class ElevensBoard {
 	private Deck deck;
 
 	private static final boolean I_AM_DEBUGGING = false;
-
 
 	public ElevensBoard() {
 		cards = new Card[BOARD_SIZE];
@@ -70,7 +69,7 @@ public class ElevensBoard {
 		List<Integer> selected = new ArrayList<Integer>();
 		for (int k = 0; k < cards.length; k++) {
 			if (cards[k] != null) {
-				selected.add(k);
+				selected.add(new Integer(k));
 			}
 		}
 		return selected;
@@ -97,41 +96,33 @@ public class ElevensBoard {
 	}
 
 	public boolean isLegal(List<Integer> selectedCards) {
-		if (selectedCards.size() == 2) {
-			if (containsPairSum11(selectedCards)) {
-				return true;
-			}
-		} else if (selectedCards.size() == 3) {
-			if (containsJQK(selectedCards)) {
-					return true;
-			}
-		}
-
-		return false;
+		return containsPairSum11(selectedCards) || containsJQK(selectedCards);
 	}
 
 	public boolean anotherPlayIsPossible() {
-		for (int i = 0; i < BOARD_SIZE; i++) {
-			for (int j = 0; j < BOARD_SIZE; j++) {
-				if (cards[j].pointValue() == (11 - cards[i].pointValue())) {
-					return true;
-				}
-			}
-		}
-
-		for (int i = 0; i < BOARD_SIZE; i++) {
-			for (int j = 0; j < BOARD_SIZE; j++) {
-				for (int k = 0; k < BOARD_SIZE; k++) {
-					if (cards[i].pointValue() + cards[j].pointValue() + cards[k].pointValue() == 0) {
-						if (!cards[i].rank().equals(cards[j].rank()) && !cards[i].rank().equals(cards[k].rank()) && !cards[j].rank().equals(cards[k].rank())) {
-							return true;
-						}
-					}
-				}
-			}
-		}
-
-		return false;
+		for (int i = 0; i < cards.length; i++) {
+         for (int j = i + 1; j < cards.length; j++) {
+            ArrayList<Integer> selectedCardPair = new ArrayList<Integer>();
+            selectedCardPair.add(i);
+            selectedCardPair.add(j);
+            
+            if (isLegal(selectedCardPair)) {
+               return true;
+            }
+            
+            for (int k = j + 1; k < cards.length; k++) {
+               ArrayList<Integer> selectedCardTriple = new ArrayList<Integer>();
+               selectedCardTriple.add(i);
+               selectedCardTriple.add(j);
+               selectedCardTriple.add(k);
+               
+               if (isLegal(selectedCardTriple)) {
+                  return true;
+               }
+            }
+         }
+      }
+      return false;
 	}
 
 	private void dealMyCards() {
@@ -141,20 +132,24 @@ public class ElevensBoard {
 	}
 
 	private boolean containsPairSum11(List<Integer> selectedCards) {
-		if (cards[selectedCards.get(0)].pointValue() + cards[selectedCards.get(1)].pointValue() == 11) {
-			return true;
-		}
-
-		return false;
+      if (selectedCards.size() != 2) {
+         return false;
+      } else if (cards[selectedCards.get(0)] == null || cards[selectedCards.get(1)] == null) {
+         return false;
+      } else {
+         return cards[selectedCards.get(0)].pointValue() + cards[selectedCards.get(1)].pointValue() == 11;
+      }
 	}
 
 	private boolean containsJQK(List<Integer> selectedCards) {
-		if (cards[selectedCards.get(0)].pointValue() + cards[selectedCards.get(1)].pointValue() + cards[selectedCards.get(2)].pointValue() == 0) {
-			if (!cards[selectedCards.get(0)].rank().equals(cards[selectedCards.get(1)].rank()) && !cards[selectedCards.get(1)].rank().equals(cards[selectedCards.get(2)].rank()) && !cards[selectedCards.get(0)].rank().equals(cards[selectedCards.get(2)].rank())) {
-				return true;
-			}
-		}
+		if (selectedCards.size() != 3) {
+         return false;
+      } else if (cards[selectedCards.get(0)] == null || cards[selectedCards.get(1)] == null || cards[selectedCards.get(2)] == null) {
+         return false;
+      }
 
-		return false;
+      String ranks = cards[selectedCards.get(0)].rank() + "." + cards[selectedCards.get(1)].rank() + "." + cards[selectedCards.get(2)].rank();
+      
+	  return ranks.indexOf("jack") >= 0 && ranks.indexOf("queen") >= 0 && ranks.indexOf("king") >= 0;
 	}
 }

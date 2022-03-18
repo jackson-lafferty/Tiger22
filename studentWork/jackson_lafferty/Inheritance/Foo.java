@@ -1,4 +1,4 @@
-package sampleCode.Inheritance;
+package studentWork.jackson_lafferty.Inheritance;
 
 public class Foo {
     public String toString() {

@@ -1,4 +1,4 @@
-package sampleCode.Inheritance;
+package studentWork.jackson_lafferty.Inheritance;
 
 public class Bar extends Foo {
     public void method2() {
