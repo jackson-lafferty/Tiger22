@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.Inheritance;
+package studentWork.jackson_lafferty.Inheritance.Mumble;
 
 public class Mumble extends Baz{
     public void method2() {

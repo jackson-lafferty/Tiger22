@@ -1,4 +1,4 @@
-package sampleCode.Inheritance.Animals;
+package studentWork.jackson_lafferty.Inheritance.Animals;
 
 public class Falcon extends Bird {
    public Falcon() {

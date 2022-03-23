@@ -1,4 +1,4 @@
-package sampleCode.Inheritance.Vehicle;
+package studentWork.jackson_lafferty.Inheritance.Vehicle;
 
 public class VehicleClient {
    public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package sampleCode.Inheritance.Person;
+package studentWork.jackson_lafferty.Inheritance.Person;
 
 public class PersonClient { 
     public static void main(String[] args) {  

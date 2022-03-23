@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.Inheritance;
+package studentWork.jackson_lafferty.Inheritance.Mumble;
 
 public class FoobarClient {
     public static void main(String[] args) {

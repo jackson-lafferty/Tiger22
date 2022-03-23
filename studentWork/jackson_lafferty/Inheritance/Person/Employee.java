@@ -1,4 +1,4 @@
-package sampleCode.Inheritance.Person;
+package studentWork.jackson_lafferty.Inheritance.Person;
 
 public class Employee extends Person {
      

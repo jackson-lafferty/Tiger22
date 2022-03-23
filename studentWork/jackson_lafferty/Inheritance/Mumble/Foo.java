@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.Inheritance;
+package studentWork.jackson_lafferty.Inheritance.Mumble;
 
 public class Foo {
     public String toString() {

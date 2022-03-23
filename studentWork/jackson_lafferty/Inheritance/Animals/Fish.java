@@ -1,4 +1,4 @@
-package sampleCode.Inheritance.Animals;
+package studentWork.jackson_lafferty.Inheritance.Animals;
 
 public class Fish extends Animal {
    public Fish() {
