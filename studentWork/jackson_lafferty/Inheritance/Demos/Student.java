@@ -1,0 +1,26 @@
+package studentWork.jackson_lafferty.Inheritance.Demos;
+
+public class Student {
+    private String name;
+    private int age;
+
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public boolean equals(Object o) {
+        Student other = (Student) o;
+        return this.name.equals(other.name) && this.age == other.age;
+    }
+
+    public static void main(String[] args) {
+        Student alice = new Student("alice", 15);
+        Student alice2 = new Student("alice", 15);
+
+        System.out.println(alice == alice2);
+
+        System.out.println(alice.equals(alice2));
+    }
+    
+}
