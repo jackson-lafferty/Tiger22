@@ -1,6 +1,11 @@
 package studentWork.jackson_lafferty.Inheritance.Vehicle;
 
 public class HybridCar extends Car {
+  
+    public HybridCar(int xStart, int yStart) {
+    super(xStart, yStart);
+  }
+
     private double batteryLife;
     private double batteryPerMile;
  

@@ -20,7 +20,7 @@ public class Account {
       this.amount += amount;
    }
 
-   public int getAccoutNum()
+   public int getAccountNum()
    {
       return accountNum;
    }
