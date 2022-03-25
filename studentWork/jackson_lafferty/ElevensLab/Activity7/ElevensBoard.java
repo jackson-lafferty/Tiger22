@@ -69,7 +69,7 @@ public class ElevensBoard {
 		List<Integer> selected = new ArrayList<Integer>();
 		for (int k = 0; k < cards.length; k++) {
 			if (cards[k] != null) {
-				selected.add(new Integer(k));
+				selected.add(Integer.valueOf(k));
 			}
 		}
 		return selected;
