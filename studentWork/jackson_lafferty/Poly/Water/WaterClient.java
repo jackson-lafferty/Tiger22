@@ -1,4 +1,4 @@
-package Water;
+package studentWork.jackson_lafferty.Poly.Water;
 public class WaterClient {
 
     public static void main(String[] args) {

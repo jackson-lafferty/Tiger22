@@ -1,4 +1,4 @@
-package Water;
+package studentWork.jackson_lafferty.Poly.Water;
 
 public class Bay extends Lake {
     public void method1() {
