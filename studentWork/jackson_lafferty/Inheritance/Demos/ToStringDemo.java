@@ -15,6 +15,7 @@ public class ToStringDemo {
     public static void main(String[] args) {
         ToStringDemo bob = new ToStringDemo("bob");
         System.out.println(bob);
+        System.out.println(bob.toString());
 
         ToStringDemo alice = new ToStringDemo("alice");
         System.out.println(alice);
