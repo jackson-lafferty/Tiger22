@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.ElevensLab.Activity2;
+package ElevensLab.Activity2;
 
 public class DeckTester {
 

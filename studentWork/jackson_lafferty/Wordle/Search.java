@@ -1,5 +1,4 @@
-package studentWork.jackson_lafferty.Wordle;
-
+package Wordle;
 public class Search {
 
     public static void main(String[] args) {

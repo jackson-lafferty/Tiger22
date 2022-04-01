@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.Constructor.MarioKart;
+package Constructor.MarioKart;
 
 public class MarioKartGame {
     private String track;

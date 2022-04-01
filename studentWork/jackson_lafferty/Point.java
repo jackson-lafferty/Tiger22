@@ -1,5 +1,3 @@
-package studentWork.jackson_lafferty;
-
 import java.lang.Math;
 
 public class Point {

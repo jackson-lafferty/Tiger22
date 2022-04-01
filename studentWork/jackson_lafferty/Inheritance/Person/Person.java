@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.Inheritance.Person;
+package Inheritance.Person;
 
 public class Person {
       

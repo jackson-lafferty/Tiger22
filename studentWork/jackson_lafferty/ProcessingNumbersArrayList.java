@@ -1,4 +1,3 @@
-package studentWork.jackson_lafferty;
 import java.util.*;
 
 public class ProcessingNumbersArrayList {

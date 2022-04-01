@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.ObjSuper;
+package ObjSuper;
 
 public class CellPhone {
    private String ownerName;

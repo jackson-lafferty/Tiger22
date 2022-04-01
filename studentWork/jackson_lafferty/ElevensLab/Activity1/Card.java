@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.ElevensLab.Activity1;
+package ElevensLab.Activity1;
 
 public class Card {
 

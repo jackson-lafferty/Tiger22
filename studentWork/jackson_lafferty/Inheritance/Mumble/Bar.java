@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.Inheritance.Mumble;
+package Inheritance.Mumble;
 
 public class Bar extends Foo {
     public void method2() {

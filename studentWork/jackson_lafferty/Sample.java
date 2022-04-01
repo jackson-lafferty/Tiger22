@@ -1,5 +1,3 @@
-package studentWork.jackson_lafferty;
-
 public class Sample {
 
     public static void main(String[] args) {

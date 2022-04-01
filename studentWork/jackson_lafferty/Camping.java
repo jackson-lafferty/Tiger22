@@ -1,4 +1,3 @@
-package studentWork.jackson_lafferty;
 import java.util.Arrays;
 
 public class Camping {

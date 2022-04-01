@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.Inheritance.Animals2;
+package Inheritance.Animals2;
 
 public class TestClient {
     public static void main(String args[]) {

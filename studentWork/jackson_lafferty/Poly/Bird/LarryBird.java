@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.Poly.Bird;
+package Poly.Bird;
 
 public class LarryBird extends Bird {
 

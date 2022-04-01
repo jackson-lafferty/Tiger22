@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.Inheritance.Vehicle;
+package Inheritance.Vehicle;
 
 class Car extends Vehicle {
 

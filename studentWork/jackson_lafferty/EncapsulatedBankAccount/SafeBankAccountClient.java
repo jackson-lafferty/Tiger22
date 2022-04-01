@@ -1,6 +1,4 @@
-package studentWork.jackson_lafferty.EncapsulatedBankAccount;
-// package sampleCode.EncapsulatedBankAccount;
-
+package EncapsulatedBankAccount;
 
 public class SafeBankAccountClient {
    public static void main(String[] args) {

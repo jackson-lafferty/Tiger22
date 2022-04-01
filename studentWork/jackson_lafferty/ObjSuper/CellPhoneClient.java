@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.ObjSuper;
+package ObjSuper;
 
 public class CellPhoneClient {
    public static void main(String[] args) {

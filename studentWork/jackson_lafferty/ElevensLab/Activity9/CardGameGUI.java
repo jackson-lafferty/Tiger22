@@ -1,6 +1,6 @@
-package studentWork.jackson_lafferty.ElevensLab.Activity9;
-import studentWork.jackson_lafferty.ElevensLab.Activity1.Card;
-import studentWork.jackson_lafferty.ElevensLab.Activity7.ElevensBoard;
+package ElevensLab.Activity9;
+import ElevensLab.Activity1.Card;
+import ElevensLab.Activity7.ElevensBoard;
 
 import java.awt.Point;
 import java.awt.Graphics;

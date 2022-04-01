@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.Inheritance.Demos;
+package Inheritance.Demos;
 public class EqualsDemo {
     public static void main(String[] args) {
         String z = "z";

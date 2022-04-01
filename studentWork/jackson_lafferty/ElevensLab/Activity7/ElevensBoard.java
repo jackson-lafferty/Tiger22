@@ -1,6 +1,6 @@
-package studentWork.jackson_lafferty.ElevensLab.Activity7;
-import studentWork.jackson_lafferty.ElevensLab.Activity1.Card;
-import studentWork.jackson_lafferty.ElevensLab.Activity2.Deck;
+package ElevensLab.Activity7;
+import ElevensLab.Activity1.Card;
+import ElevensLab.Activity2.Deck;
 import java.util.*;
 
 public class ElevensBoard {

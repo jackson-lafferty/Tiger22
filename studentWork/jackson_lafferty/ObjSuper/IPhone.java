@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.ObjSuper;
+package ObjSuper;
 
 public class IPhone extends CellPhone {
    public IPhone(String oN, int v) {

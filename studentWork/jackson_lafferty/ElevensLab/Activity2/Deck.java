@@ -1,5 +1,5 @@
-package studentWork.jackson_lafferty.ElevensLab.Activity2;
-import studentWork.jackson_lafferty.ElevensLab.Activity1.Card;
+package ElevensLab.Activity2;
+import ElevensLab.Activity1.Card;
 import java.util.*;
 
 public class Deck {

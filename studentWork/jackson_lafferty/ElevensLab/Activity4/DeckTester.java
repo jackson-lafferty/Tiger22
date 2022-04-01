@@ -1,5 +1,5 @@
-package studentWork.jackson_lafferty.ElevensLab.Activity4;
-import studentWork.jackson_lafferty.ElevensLab.Activity2.Deck;
+package ElevensLab.Activity4;
+import ElevensLab.Activity2.Deck;
 
 public class DeckTester {
 	public static void main(String[] args) {

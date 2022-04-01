@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.Wordle;
+package Wordle;
 
 import java.util.ArrayList;
 import java.util.Collections;

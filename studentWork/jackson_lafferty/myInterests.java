@@ -1,4 +1,3 @@
-package studentWork.jackson_lafferty;
 import java.util.ArrayList;
 
 public class myInterests {

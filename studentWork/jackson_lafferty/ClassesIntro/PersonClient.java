@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.ClassesIntro;
+package ClassesIntro;
 import java.util.*;
 
 public class PersonClient {

@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.ElevensLab.Activity3;
+package ElevensLab.Activity3;
 import java.util.*;
 
 public class Shuffler {

@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.Encapsulation;
+package Encapsulation;
 
 import java.util.ArrayList;
 

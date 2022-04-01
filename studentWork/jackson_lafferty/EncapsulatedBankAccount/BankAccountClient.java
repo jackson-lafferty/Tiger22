@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.EncapsulatedBankAccount;
+package EncapsulatedBankAccount;
 
 public class BankAccountClient {
    public static void main(String[] args) {

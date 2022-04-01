@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.Inheritance.Demos;
+package Inheritance.Demos;
 
 public class ToStringDemo {
 

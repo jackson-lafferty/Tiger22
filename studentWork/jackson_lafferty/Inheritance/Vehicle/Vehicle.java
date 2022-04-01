@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.Inheritance.Vehicle;
+package Inheritance.Vehicle;
 
 class Vehicle {
     static final int FEET_IN_MILE = 5280;

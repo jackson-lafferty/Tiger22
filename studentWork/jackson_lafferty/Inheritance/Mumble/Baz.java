@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.Inheritance.Mumble;
+package Inheritance.Mumble;
 
 public class Baz extends Foo {
     public String toString() {

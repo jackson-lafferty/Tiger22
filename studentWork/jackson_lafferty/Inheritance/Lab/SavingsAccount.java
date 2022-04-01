@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.Inheritance.Lab;
+package Inheritance.Lab;
 
 public class SavingsAccount extends Account
 {

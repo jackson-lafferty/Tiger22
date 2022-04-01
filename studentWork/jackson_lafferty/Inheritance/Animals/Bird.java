@@ -1,4 +1,4 @@
-package studentWork.jackson_lafferty.Inheritance.Animals;
+package Inheritance.Animals;
 
 public class Bird extends Animal {
    public Bird(String f, double tSMPH) {
