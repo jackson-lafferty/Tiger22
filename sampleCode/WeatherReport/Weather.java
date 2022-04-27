@@ -1,4 +1,4 @@
-package sampleCode.WeatherReport;
+package WeatherReport;
 
 import java.util.*;
 
@@ -61,66 +61,72 @@ public class Weather {
             if (num >= 5) {
                 return num;
             }
-        } 
+        }
     }
     
     public static int[][] generateTemperatures(int numStations, int numMeasurements) {
-        /* 
-         * TODO (step 1): Complete this method.
-         * You should create a 2D integer array with `numStations` rows and `numMeasurements` columns.
-         * You should then fill each element in the 2D array with a random integer between 45 and 65.
-         * To get a random number in this range, you can use the expression
-         * 
-         * r.nextInt(45, 65)
-         *
-         * This 2D array represents the temperature measurements made at different weather stations.
-         * Each row corresponds to one of the stations, and the values in that row are the measurements
-         * taken at that station over the course of time.
-         */
         Random r = new Random();
-        
-        return null; // replace this line with your complete code
+        int temps[][] = new int[numStations][numMeasurements];
+
+        for (int row = 0; row < numStations; row++) {
+            for (int col = 0; col < numMeasurements; col++) {
+                temps[row][col] = r.nextInt(20) + 45;
+            }
+        }
+
+        return temps;
     }
     
     public static void printRawTemps(String[] stationCities, int[][] temps) {
-        /*
-         * TODO (step 2): Complete this method.
-         * You should print the station name, followed by all the temperatures measured at that station.
-         * There should be a single line per station, and the temperatures should be separated by commas.
-         * For example, if there were two stations (Ephrata and Seattle), the output could look like
-         *
-         * Ephrata: 49, 62, 59, 56, 54
-         * Seattle: 48, 50, 61, 58, 47
-         */
-         
-        // replace this line with your complete code
+        for (int i = 0; i < stationCities.length; i++) {
+            System.out.print(stationCities[i] + ": ");
+
+            for (int j = 0; j < temps[i].length; j++) {
+                System.out.print(temps[i][j]);
+
+                if (j + 1 < temps[i].length) {
+                    System.out.print(", ");
+                }
+            }
+            System.out.println();
+        }
     }
     
     public static int getMaxTempAtSecond(int[][] temps) {
-        /*
-         * TODO (step 3): Complete this method.
-         * You should compute and return the largest temperature measurement          
-         * that took place at the second (index 1) station.
-         */
+        int max = 0;
+
+        for (int i = 0; i < temps[1].length; i++) {
+            if (temps[1][i] > max) {
+                max = temps[1][i];
+            }
+        }
         
-        return 0; // replace this line with your complete code
+        return max;
     }
     
     public static double getAverageTemp(int[][] temps) {
-        /*
-         * TODO (step 4): Complete this method.
-         * You should compute the average temperature value across all measurements.
-         */
+        double total = 0.0;
+        int num = 0;
+
+        for (int row = 0; row < temps.length; row++) {
+            for (int col = 0; col < temps[row].length; col++) {
+                total += temps[row][col];
+                num++;
+            }
+        }
         
-        return 0.0; // replace this line with your complete code
+        return total / num;
     }
     
     public static int getNumStartingAbove50(int[][] temps) {
-        /*
-         * TODO (step 5): Complete this method.
-         * You should compute and return the number of stations whose first measurement was greater than 50 degrees.
-         */
+        int num = 0;
+
+        for (int row = 0; row < temps.length; row++) {
+            if (temps[row][0] > 50) {
+                num += 1;
+            }
+        }
         
-        return 0; // replace this line with your complete code
+        return num;
     }
 }

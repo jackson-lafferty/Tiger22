@@ -1,4 +1,4 @@
-package sampleCode.ArrayTraversal;
+package ArrayTraversal;
 public class TraversalTests {
    public static void main(String[] args) {
       boolean part1 = false;

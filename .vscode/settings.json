@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
-        "studentWork/jackson_lafferty"
+        "studentWork/jackson_lafferty",
+        "sampleCode"
     ]
 }

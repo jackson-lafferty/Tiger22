@@ -1,4 +1,4 @@
-package sampleCode.Search;
+package Search;
 
 public class Search {
 

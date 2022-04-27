@@ -1,4 +1,4 @@
-package sampleCode.Cumulative;
+package Cumulative;
 import java.util.*;
 
 

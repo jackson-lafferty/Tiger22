@@ -1,4 +1,4 @@
-package sampleCode.Arrays;
+package Arrays;
 
 public class FebCalendar {
     public static void main(String[] args) {

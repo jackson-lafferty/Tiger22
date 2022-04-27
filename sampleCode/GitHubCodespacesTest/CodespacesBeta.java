@@ -1,4 +1,4 @@
-package sampleCode.GitHubCodespacesTest;
+package GitHubCodespacesTest;
 
 public class CodespacesBeta {
     public static void main(String[] args) {

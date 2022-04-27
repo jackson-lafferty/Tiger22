@@ -1,3 +1,5 @@
+package Critter;
+
 // DO NOT MAKE EDITS TO THIS FILE
 
 // Class CritterFrame provides the user interface for a simple simulation

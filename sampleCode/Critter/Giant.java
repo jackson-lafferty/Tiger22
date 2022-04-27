@@ -1,3 +1,5 @@
+package Critter;
+
 import java.awt.*;
 
 /**

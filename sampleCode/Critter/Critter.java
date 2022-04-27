@@ -1,3 +1,5 @@
+package Critter;
+
 // DO NOT MAKE EDITS TO THIS FILE
 
 // This is the superclass of all of the Critter classes.  Your class should

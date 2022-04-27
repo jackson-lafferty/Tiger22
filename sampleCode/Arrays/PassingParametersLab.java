@@ -1,4 +1,4 @@
-package sampleCode.Arrays;
+package Arrays;
 import java.util.Arrays;
 
 /** Used with the Passing Parameters lab on 2020-02-24. */

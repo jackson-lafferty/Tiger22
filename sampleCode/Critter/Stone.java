@@ -1,3 +1,5 @@
+package Critter;
+
 // This defines a simple class of critters that 
 // take no actions
 

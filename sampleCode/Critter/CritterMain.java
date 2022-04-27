@@ -1,3 +1,5 @@
+package Critter;
+
 // AP CS A Project 7
 // Authors: Stuart Reges and Marty Stepp
 //          modified by Kyle Thayer
